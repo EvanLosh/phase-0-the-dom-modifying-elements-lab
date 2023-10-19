@@ -6,11 +6,14 @@ main.parentNode.removeChild(main);
 
 //test 2 is passing
 const newHeader = document.createElement("h1");
-document.body.append(newHeader);
 
-//test 3 is failing
+
+//test 3 is passing
 newHeader.id = "victory";
 
-//test 4 is failing
-text = document.createTextNode("Danny Devito is the champion");
+
+//test 4 is passing
+const text = document.createTextNode("Danny Devito is the champion");
 newHeader.appendChild(text);
+
+document.body.append(newHeader);
